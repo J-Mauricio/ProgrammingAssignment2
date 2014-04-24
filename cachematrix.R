@@ -1,9 +1,9 @@
 ## These functions have the goal of caching the inverse of a Matrix
 ## to avoid the repetition of this calculation
 
-## This function receveives a invertible matrix and creates a list
+## This function receives an invertible matrix and creates a list
 ## with the following functions:
-##   a) set: receives a new matrix and replace the original one (variable x);
+##   a) set: receives a new matrix and replaces the original one (variable x);
 ##   b) get: returns the matrix;
 ##   c) setInverse: receives the inverse of the matrix and keeps in a variable (m);
 ##   d) getInverse: returns the inverse of the matrix.
@@ -22,8 +22,8 @@ makeCacheMatrix <- function(x = matrix()) {
              getInverse = getInverse)
 }
 
-## This function receveives the list created with the function above and
-## tries to recorver the its inverse using the getInverse function.
+## This function receives the list created with the function above and
+## tries to recover the its inverse using the getInverse function.
 ## If there is no previous inverse matrix, this function will calculate it
 ## and will use the setInverse function of the list to save it in the cache.
 ## Finally this function will return the inverse of the matrix.
